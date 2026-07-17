@@ -50,6 +50,14 @@ python analysis/02_topic_clustering.py
 python analysis/03_rating_prediction.py
 ```
 
+抽样公开 Amazon All Beauty 数据并运行公开数据分析：
+
+```bash
+python analysis/download_amazon_all_beauty_sample.py
+python analysis/04_amazon_public_sample_eda.py
+python analysis/05_amazon_rating_prediction.py
+```
+
 输出图表会生成到：
 
 ```text
@@ -58,7 +66,7 @@ outputs/figures/
 
 ## 数据说明
 
-当前仓库不直接上传大型公开数据集，只记录数据来源与使用方式。后续可基于公开数据集进行抽样分析：
+当前仓库不直接上传大型公开数据集，只记录数据来源与使用方式，并保留一个小规模公开抽样用于复现实验。后续可基于公开数据集继续扩展：
 
 - Amazon Reviews 2023: Beauty and Personal Care / All Beauty
 - Sephora Products and Skincare Reviews
@@ -73,4 +81,3 @@ research/public_datasets.md
 ## 合规说明
 
 本仓库不包含命题企业内部数据，不包含未经授权的社媒平台大规模抓取数据，不声称已接入真实平台全量数据。当前脚本使用小样例数据验证分析流程；公开数据集将在符合其使用条款的前提下用于研究与演示。
-

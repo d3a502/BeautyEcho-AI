@@ -18,4 +18,4 @@
 当前小样例：
 
 - `sample_beauty_reviews.csv`：用于验证 EDA、聚类和评分预测流程。
-
+- `amazon_all_beauty_sample.csv`：从 Amazon Reviews 2023 All Beauty 公开数据中抽取的小样本，不包含 `user_id` 和图片字段。

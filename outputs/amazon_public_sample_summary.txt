@@ -1,0 +1,4 @@
+Rows: 500
+Average rating: 4.17
+Average review length: 476.0 characters
+Verified purchase ratio: 41.40%
