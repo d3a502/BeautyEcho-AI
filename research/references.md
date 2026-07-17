@@ -1,7 +1,5 @@
 # 参考资料
 
-> A 同学负责持续补充。本文件用于满足赛事学术诚信和资料引用要求。
-
 ## 赛事与命题
 
 - 2026 AI 先锋未来人才大赛官网：https://activity.feishu.cn/future-talent#challenge
@@ -10,12 +8,16 @@
 
 ## 企业资料
 
-- 逸仙集团投资者关系公司介绍：https://ir.yatsenglobal.com/Company-Profile
+- 逸仙集团公司介绍：https://ir.yatsenglobal.com/Company-Profile
 
-## 待补充
+## 公开数据集
 
-- 美妆行业报告。
-- 小红书/抖音美妆内容趋势资料。
-- 竞品内容案例来源。
-- 用户评论样本来源说明。
+- Amazon Reviews 2023：https://amazon-reviews-2023.github.io/
+- Amazon Reviews 2023 on Hugging Face：https://huggingface.co/datasets/McAuley-Lab/Amazon-Reviews-2023
+- Sephora Products and Skincare Reviews：https://www.kaggle.com/datasets/nadyinky/sephora-products-and-skincare-reviews
+- Cosmetics Ingredients Dataset：https://www.kaggle.com/datasets/kingabzpro/cosmetics-datasets
+
+## 使用声明
+
+当前仓库仅记录公开数据集来源和小样例分析流程，不上传大型第三方数据集，也不声称已接入社媒平台全量数据。
 
