@@ -1,0 +1,7 @@
+.DS_Store
+archive/
+data/*.csv
+outputs/figures/
+outputs/*.txt
+outputs/*.csv
+__pycache__/

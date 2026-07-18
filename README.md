@@ -2,82 +2,57 @@
 
 **面向逸仙集团的美妆社媒洞察与内容策略闭环系统**
 
-> 听见用户回响，看见美妆趋势。
+> 以智能洞察识别行业痛点，以闭环策略驱动产品与内容优化。
 
-## 当前阶段
+## 仓库定位
 
-本仓库目前是报名阶段的研究基础包，不是完整产品实现。我们先完成三件事：
+本仓库用于展示 `BeautyEcho AI` 在报名阶段的研究基础与方案思路，不追求做出完整产品，而是回答三个关键问题：
 
-1. 梳理美妆社媒传播与内容策略优化的背景。
-2. 搜集可用于用户反馈分析的公开美妆数据集。
-3. 搭建基础机器学习与可视化分析流程，为后续飞书 AI + 多 Agent 方案提供数据依据。
+1. 美妆社媒竞争正在发生什么变化。
+2. 公开数据集与行业报告能否支撑前期洞察与建模验证。
+3. 如何把洞察结果延伸为面向逸仙集团的产品优化与内容策略闭环。
 
-## 项目问题
+## 项目主线
 
-逸仙集团命题关注“基于 AI 的美妆社交媒体传播分析与内容策略优化”。这类问题不能只做文案生成，而需要先理解用户真实反馈、竞品内容打法、平台热门表达和产品卖点之间的关系。
+我们将项目核心聚焦在“智能 AI 洞察与分析”能力上。系统不只是生成更多内容，而是先识别用户痛点、功效诉求、情绪偏好、竞品动作与平台差异，再将这些洞察反向用于：
 
-BeautyEcho AI 将全网美妆声量视为品牌需要持续捕捉的“妆声”，目标是将社媒趋势、用户评论、竞品内容和投放反馈转化为可执行、可复盘的内容策略。
+- 产品优化与卖点提炼；
+- 内容策略制定与素材生成；
+- 投放复盘与策略库更新。
 
-## 研究路线
-
-```text
-公开美妆评论/产品数据
--> 数据清洗与 EDA
--> 用户反馈主题聚类
--> 评分/满意度预测 baseline
--> 可视化洞察
--> 内容策略闭环方案
-```
-
-## 仓库结构
+## 当前仓库保留内容
 
 ```text
-research/     背景研究、公开数据集、参考资料
-data/         数据说明与小样例
-analysis/     基础 EDA、聚类、预测脚本
-outputs/      图表与初步发现
-proposal/     轻量概念说明
+research/     行业背景、公开数据集说明、参考资料
+proposal/     开题报告草稿、项目方案概览
+analysis/     基于公开美妆数据的 EDA 与评分预测基线
+outputs/      研究结论摘要与脚本输出目录
+data/         数据放置说明（不直接上传第三方完整数据）
+assets/       架构图与展示素材
 ```
 
-## 当前可运行内容
+## 推荐阅读顺序
 
-使用仓库内的小样例数据运行：
+1. `proposal/开题报告草稿.md`
+2. `research/行业背景研究.md`
+3. `research/公开数据集说明.md`
+4. `outputs/公开数据研究结论摘要.md`
+
+## 本地运行方式
+
+本地准备公开美妆数据后可运行基础研究脚本：
 
 ```bash
 pip install -r requirements.txt
-python analysis/01_sample_eda.py
-python analysis/02_topic_clustering.py
-python analysis/03_rating_prediction.py
+python analysis/01_公开数据EDA.py
+python analysis/02_公开数据评分预测.py
 ```
 
-抽样公开 Amazon All Beauty 数据并运行公开数据分析：
+脚本会优先从以下位置读取数据：
 
-```bash
-python analysis/download_amazon_all_beauty_sample.py
-python analysis/04_amazon_public_sample_eda.py
-python analysis/05_amazon_rating_prediction.py
-```
+1. `data/skincare_df.csv`
+2. 仓库同级目录下的 `archive/skincare_df.csv`
 
-输出图表会生成到：
+## 数据与合规说明
 
-```text
-outputs/figures/
-```
-
-## 数据说明
-
-当前仓库不直接上传大型公开数据集，只记录数据来源与使用方式，并保留一个小规模公开抽样用于复现实验。后续可基于公开数据集继续扩展：
-
-- Amazon Reviews 2023: Beauty and Personal Care / All Beauty
-- Sephora Products and Skincare Reviews
-- Cosmetics Ingredients Dataset
-
-详见：
-
-```text
-research/public_datasets.md
-```
-
-## 合规说明
-
-本仓库不包含命题企业内部数据，不包含未经授权的社媒平台大规模抓取数据，不声称已接入真实平台全量数据。当前脚本使用小样例数据验证分析流程；公开数据集将在符合其使用条款的前提下用于研究与演示。
+仓库不直接上传第三方完整数据集，不包含企业内部数据，也不声称已接入真实平台全量社媒数据。当前研究围绕公开数据集与行业报告做方法验证，并在后续方案中结合飞书智能伙伴、多维表格等能力构建可落地的协同闭环。
