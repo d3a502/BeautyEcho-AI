@@ -31,6 +31,10 @@ data/         数据放置说明（不直接上传第三方完整数据）
 assets/       架构图与展示素材
 ```
 
+## 架构图
+
+![BeautyEcho AI 架构图](assets/BeautyEcho_AI_架构图.png)
+
 ## 推荐阅读顺序
 
 1. `proposal/开题报告.md`
@@ -48,10 +52,12 @@ python analysis/01_公开数据EDA.py
 python analysis/02_公开数据评分预测.py
 ```
 
-脚本会优先从以下位置读取数据：
+脚本会优先尝试以下本地文件名与位置：
 
-1. `data/skincare_df.csv`
-2. 仓库同级目录下的 `archive/skincare_df.csv`
+1. `data/public_beauty_data.csv`
+2. 仓库同级目录下的 `archive/public_beauty_data.csv`
+3. `data/skincare_df.csv`
+4. 仓库同级目录下的 `archive/skincare_df.csv`
 
 ## 数据与合规说明
 

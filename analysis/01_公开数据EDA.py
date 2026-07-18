@@ -11,6 +11,8 @@ OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 def resolve_data_path() -> Path:
     candidates = [
+        ROOT / "data" / "public_beauty_data.csv",
+        ROOT.parent / "archive" / "public_beauty_data.csv",
         ROOT / "data" / "skincare_df.csv",
         ROOT.parent / "archive" / "skincare_df.csv",
     ]
@@ -18,8 +20,8 @@ def resolve_data_path() -> Path:
         if candidate.exists():
             return candidate
     raise FileNotFoundError(
-        "未找到 Sephora 数据集，请将 skincare_df.csv 放到 data/ 目录，"
-        "或放在仓库同级目录 archive/ 下。"
+        "未找到公开美妆数据文件，请将 public_beauty_data.csv 放到 data/ 目录，"
+        "或放在仓库同级目录 archive/ 下。当前脚本也兼容 skincare_df.csv。"
     )
 
 

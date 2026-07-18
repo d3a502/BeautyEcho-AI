@@ -4,7 +4,12 @@
 
 ## 推荐放置方式
 
-请将本地下载的 `skincare_df.csv` 放在以下任一位置：
+建议优先将本地整理后的公开美妆数据命名为 `public_beauty_data.csv`，并放在以下任一位置：
+
+1. `data/public_beauty_data.csv`
+2. 仓库同级目录下的 `archive/public_beauty_data.csv`
+
+为了兼容现有本地研究文件，脚本也支持以下旧文件名：
 
 1. `data/skincare_df.csv`
 2. 仓库同级目录下的 `archive/skincare_df.csv`
