@@ -1,4 +1,4 @@
-# BeautyEcho AI 
+# BeautyEcho AI
 
 **面向逸仙集团的AI美妆社媒洞察与内容策略闭环系统**
 
@@ -24,7 +24,7 @@
 
 ```text
 research/     行业背景、公开数据集说明、参考资料
-proposal/     开题报告草稿、项目方案概览
+proposal/     开题报告、项目方案概览
 analysis/     基于公开美妆数据的 EDA 与评分预测基线
 outputs/      研究结论摘要与脚本输出目录
 data/         数据放置说明（不直接上传第三方完整数据）
@@ -33,7 +33,7 @@ assets/       架构图与展示素材
 
 ## 推荐阅读顺序
 
-1. `proposal/开题报告草稿.md`
+1. `proposal/开题报告.md`
 2. `research/行业背景研究.md`
 3. `research/公开数据集说明.md`
 4. `outputs/公开数据研究结论摘要.md`
